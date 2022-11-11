@@ -1,0 +1,26 @@
+<!-- <header> 
+        <nav class="nav container">
+            <div class="nav_logo">
+                <h2 class="nav_title">SHOP'S NAME</h2>
+            </div>
+            <ul class="nav_link nav_link--menu">
+                <li class="nav_items">
+                    <a href="#" class="nav_links">HOME</a>
+                </li>
+
+                <li class="nav_items">
+                    <a href="#" class="nav_links">PRODUCTS</a>
+                </li>
+
+                <li class="nav_items">
+                    <a href="#" class="nav_links">CATEGORIES</a>
+                </li>
+
+                <li class="nav_items">
+                    <a href="#" class="nav_links">SUPPORT</a>
+                </li>
+                
+
+            </ul>
+        </nav>
+    </header> -->
