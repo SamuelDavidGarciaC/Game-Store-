@@ -1,0 +1,423 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.title {
+    position: absolute;
+    left: 45.3%;
+    top: 60px;
+    display: flex;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.principal-square {
+    position: relative;
+    background: rgba(56, 2, 87, 0.6);
+    width: 100%;
+    height: 680px;
+    top: 100px;
+    z-index: 10;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+}
+.card-1,.card-2,.card-3{
+    position: relative;
+    padding: 10px;
+    flex: 22%;
+    margin: 100px;
+    width: 100px;
+    height: 420px;
+    margin-left: 160px;
+    margin-right: 160px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card-1 {
+    top: -20px;
+    background-color: #270133;
+}
+
+.card-2 {
+    top: 80px;
+    background-color: #270133;  
+}
+  
+
+.card-3 {
+    top: -20px;
+    background-color: #270133;
+}
+
+.card-img-1{
+    width: 100%;
+    height: 100%;  
+    border-radius: 20px;
+    background: url("../../img/action/battlefield-1.jpeg");
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+}
+
+.card-img-2{
+    width: 100%;
+    height: 100%;  
+    border-radius: 20px;
+    background: url("../../img/Horror/village.jpg");
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+}
+
+.card-img-3{
+    width: 100%;
+    height: 100%;  
+    border-radius: 20px;
+    background: url("../../img/adventure/tomb-raider.jpg");
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+}
+
+.buy{
+    background-color: #B74CDC;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 5px 30px;
+    text-transform: uppercase;
+    transition: 1s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+button:hover {
+    background-color: #D99BFF;
+}
+
+/* SECTION PLATFORMS  */
+
+.platforms {
+    position: relative;
+    top: 300px;
+    height: 1500px;
+    width: 100%;
+    background: rgba(56, 2, 87, 0.4);
+}
+
+
+.pc-category .lines {
+    position: absolute;
+    top: 18%;
+    width: 100%;
+}
+
+.xbox-category .lines-2 {
+    position: absolute;
+    top: 53%;
+    width: 100%;
+}
+
+.play-category .lines-3 {
+    position: absolute;
+    top: 86%;
+    width: 100%;
+}
+
+/* PC CATEGORY  */
+
+.pc-category button, .xbox-category button, .play-category button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #00ADEF;
+    transition: 1s;
+    width: 25%;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0px auto;
+}
+
+.pc-category button:hover {
+    background: #0D3B96;
+}
+
+.card-4, .card-5, .card-6, .card-7, .card-8{
+    position: relative;
+    padding: 10px;
+    flex: 10%;
+    margin: 80px;
+    width: 250px;
+    height: 320px;
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.line-1 {
+    height: 5px;
+    background: #fff;
+}
+
+.line-2 {
+    margin-top: 5px;
+    height: 5px;
+    background: #00ADEF;
+}
+
+
+/* img videogames-products */
+/* pc */
+.card-img-4{
+    width: 100%;
+    height: 100%;  
+    border-radius: 20px;
+    background: url("../../img/plataforms/pc/the-witcher-3.jpg");
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+}
+
+.card-img-5{
+    width: 100%;
+    height: 100%;  
+    border-radius: 20px;
+    background: url("../../img/plataforms/pc/no-mans-sky.jpeg");
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+}
+
+.card-img-6{
+    width: 100%;
+    height: 100%;  
+    border-radius: 20px;
+    background: url("../../img/plataforms/pc/escape-from-tarkov.webp");
+	background-position: center;
+	background-attachment: contain;
+	background-size: cover;
+}
+
+.card-img-6 {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: url("../../img/plataforms/pc/escape-from-tarkov.webp");
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+
+.card-img-7 {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: url("../../img/plataforms/pc/half-life-alyx.jpg");
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+
+.card-img-8 {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: url("../../img/plataforms/pc/outlast2.webp");
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+
+/* xbox */
+
+.card-img-9 {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: url("../../img/plataforms/xbox/burnout-paradise.jpeg");
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+
+.card-img-10 {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: url("../../img/plataforms/xbox/forza-horizon-4.jpeg");
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+
+.card-img-11 {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: url("../../img/plataforms/xbox/halo-infinite.png");
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+
+.card-img-12 {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: url("../../img/plataforms/xbox/gears-of-war-4.jpg");
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+
+.card-img-13 {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: url("../../img/plataforms/xbox/flight-simulator.jpg");
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+
+/* playstation */
+.card-img-14 {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: url("../../img/plataforms/playStation/god-of-war.jpeg");
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+
+.card-img-15 {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: url("../../img/plataforms/playStation/days-gone.jpeg");
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+
+.card-img-16{
+    width: 100%;
+    height: 100%;border-radius: 20px;
+    background: url("../../img/plataforms/playStation/detroit-become-human.jpeg");
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+
+.card-img-17 {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: url("../../img/plataforms/playStation/uncharted-4.jpg");
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+
+.card-img-18 {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: url("../../img/plataforms/playStation/the-last-of-us.jpg");
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+}
+/* XBOX CATEGORY  */
+
+.xbox-category button{
+        background: #9BC848;
+    }
+
+.xbox-category button:hover{
+    background: #007205;
+}
+
+.card-9, .card-10, .card-11, .card-12, .card-13{
+    position: relative;
+    padding: 10px;
+    flex: 10%;
+    margin: 80px;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.line-3 {
+    height: 5px;
+    background: #9BC848;
+}
+
+.line-4 {
+    margin-top: 5px;
+    height: 5px;
+    background: #fff;
+}
+
+
+/* PLAY CATEGORY  */
+
+.play-category button{
+    background: #01459A;
+}
+
+.play-category button:hover {
+    background: #2CA4E8;
+}
+
+.card-14, .card-15, .card-16, .card-17, .card-18 {
+    position: relative;
+    padding: 10px;
+    flex: 10%;
+    margin: 80px;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.line-5 {
+    height: 5px;
+    background: #01459A;
+}
+
+.line-6 {
+    margin-top: 5px;
+    height: 5px;
+    background: #fff;
+}
+
+.view-more{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #B74CDC;
+    transition: 2s;
+    width: 25%;
+    border-radius: 20px;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0px auto;
+    padding: 5px;
+    
+}
