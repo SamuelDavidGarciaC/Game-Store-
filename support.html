@@ -5,16 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUPPORT</title>
+     <!-- link font awesome icons -->
+     <script src="https://kit.fontawesome.com/53bf4710fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/support.css">
 </head>
 <body>
-    <header>
         <!-- Create navbar with the items -->
         <nav class="navbar">
             <div class="logo"><a href="./index.html">Shop's Name</a></div>
             <ul class="items">
                 <li><a href="./index.html">Home</a></li>
-                <li class="active"><a href="./products.html">Products</a></li>
+                <li><a href="./products.html">Products</a></li>
                 <li><a href="./categories.html">Categories</a></li>
                 <li class="active"><a href="./support.html">Support</a></li>
             </ul>
@@ -28,6 +30,42 @@
             </div>
         </nav>
 
-    <H1>Support</H1>
+        <!-- Div container to the contact appart -->
+        <div class="container-contact">
+            
+            <div class="container-img"><img src="img/Contact-Us.png" alt=""></div>
+            <!-- form  -->
+            <div class="form">
+                <h1>Contact Us</h1>
+                <form action="/">
+                    <ul>
+                        <li>
+                        <label for="name"></label>
+                        <input type="text" id="name" name="user_name" placeholder="First Name">
+                        </li>
+                        <li>
+                        <label for="name"></label>
+                        <input type="text" id="lastName" name="user_lastName" placeholder="Last Name">
+                        </li>
+                        <li>
+                        <label for="mail"></label>
+                        <textarea id="mail" name="user_mail" placeholder="Enter Email"></textarea>
+                        </li>
+                        <li>
+                        <label for="msg"></label>
+                        <textarea id="msg" name="user_message" placeholder="Your Message"></textarea>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+            <div class="contact-info">
+                <div class="icons-contact">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+            
+        </div>
 </body>
 </html>
