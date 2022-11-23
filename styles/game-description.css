@@ -1,0 +1,549 @@
+body {
+    overflow-x: hidden;
+}
+
+/* Start */
+.main-container {
+    display: flex;
+    background-color: #000000;
+    margin: 150px 0px 300px 160px;
+    z-index: 100;
+}
+
+.main-image {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column wrap;
+    width: 341px;
+    height: 432px;
+    border-radius: 20px;
+}
+
+.first-information {
+    height: 500px;
+    width: 45%;
+    text-align: justify;
+    margin-left: 32px;
+}
+
+.title-game {
+    font-size: 35px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 65px;
+}
+
+.fast-description {
+    font-size: 22px;
+    line-height: 32px;
+}
+
+.first-information span {
+    color: #D99BFF;
+}
+
+.meta-score {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.fa-star {
+    display: flex;
+    align-items: center;
+    color: #FFCE31;
+    font-size: 38px;
+}
+
+.categories-general {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    line-height: 30px;
+    width: 50%;
+    font-size: 14px;
+    gap: 1rem;
+    margin-left: 0px;
+    margin-top: 25px;
+}
+
+.background-categories-general {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: rgba(80, 80, 80, 0.8);
+    border-radius: 7px;
+    width: 8.125rem;
+    height: 1.1875rem;
+    padding: 3px 8px;
+}
+
+.number-score {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFCE31;
+    width: 45px;
+    height: 40px;
+    border-radius: 7px;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.score-text {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-weight: 600;
+}
+
+.check-sistem-requiriments {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: start;
+    margin-top: 25px;
+    font-size: 12px;
+    color: #D99BFF;
+}
+
+.check-sistem-requiriments svg {
+    margin-left: 22px;
+}
+
+
+/* section-right */
+
+.purchase-cart {
+    position: absolute;
+    width: 450px;
+    height: 250px;
+    left: 1355px;
+    top: 250px;
+    border-radius: 10px;
+    z-index: 110;
+    background: rgba(112, 111, 111, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.fa-heart {
+    position: absolute;
+    font-size: 30px;
+    text-align: center;
+    left: -35px;
+    color: #FFCE31;
+    /* tas vivo? */
+    cursor: pointer;
+}
+
+.purchase-cart p {
+    position: relative;
+    font-size: 12px;
+    margin: 0px 15px 0px 10px
+}
+
+.top-bar {
+    background: #171717;
+    width: 100%;
+    height: 35px;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    color: #e6b61a;
+    font-size: 20px;
+    margin: 0px 0px 30px 0px;
+}
+
+.platform-inform {
+    position: relative;
+    display: inline-flex;
+    background-color: #141414;
+    width: 85%;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    border-radius: 15px;
+    font-size: 28px;
+    left: 8%;
+}
+
+.v-bar {
+    width: 1px;
+    height: 20px;
+    background-color: #3a3636;
+}
+
+.fa-windows {
+    color: #00ADEF;
+}
+
+.fa-check {
+    color: #9BC848;
+    margin: 0px 0px 0px 10px
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+
+.price-container {
+    display: inline-flex;
+    width: 93%;
+    text-align: center;
+    justify-content: flex-end;
+    align-items: baseline;
+    font-weight: 400;
+    margin: 20px 0px 0px 0px;
+}
+
+.price-container h1 {
+    font-size: 40px;
+}
+
+.price-discount {
+    position: relative;
+    display: inline-flex;
+    text-align: center;
+    justify-content: flex-end;
+    align-items: center;
+    left: 10px;
+    color: #808080;
+}
+
+.price-discount h3 {
+    text-decoration: line-through;
+    text-decoration-color: #9BC848;
+}
+
+.discount {
+    position: relative;
+    color: #D99BFF;
+    right: 5px;
+}
+
+.buy-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    top: -5px;
+}
+
+.buy-now {
+    background-color: #FFCE31;
+    width: 300px;
+    height: 42px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.buy-now:hover {
+    background-color: #c59c14;
+}
+
+.cart-icon {
+    position: relative;
+    background: #000;
+    font-size: 30px;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    text-align: center;
+    left: 22px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.cart-icon:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+.cart-icon li {
+    position: relative;
+    right: 2px;
+}
+
+.separation {
+    width: 100%;
+    background: #3a3636;
+    height: 2px;
+}
+
+.trailer-container {
+    display: grid;
+    position: relative;
+    width: 92%;
+    height: 1000px;
+    margin: 0px auto;
+    grid-template-areas:
+        'trailer trailer trailer img-1 img-1 img-1'
+        'trailer trailer trailer img-2 img-2 img-2'
+        'img-3 img-3 img-4 img-4 img-5 img-5';
+    gap: 30px;
+    padding: 20px;
+}
+
+.trailer {
+    display: grid;
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    border-radius: 28px;
+    grid-area: trailer;
+    transition: 1s;
+}
+
+.trailer iframe {
+    border-radius: 28px;
+}
+
+
+.img-1 {
+    position: relative;
+    width: 500px;
+    height: 250px;
+    border-radius: 28px;
+    left: 80px;
+    transition: 1s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    grid-area: img-1;
+    background-image: url("../img/trailers/far-cry-6-img-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-2 {
+    position: relative;
+    width: 500px;
+    height: 250px;
+    border-radius: 28px;
+    left: 80px;
+    transition: 1s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    grid-area: img-2;
+    background-image: url("../img/trailers/far-cry-6-img-2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-3 {
+    width: 450px;
+    height: 250px;
+    border-radius: 28px;
+    transition: 1s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    grid-area: img-3;
+    background-image: url("../img/trailers/far-cry-6-img-3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-4 {
+    position: relative;
+    width: 450px;
+    height: 250px;
+    border-radius: 28px;
+    left: -137px;
+    transition: 1s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    grid-area: img-4;
+    background-image: url("../img/trailers/far-cry-6-img-4.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-5 {
+    position: relative;
+    width: 500px;
+    height: 250px;
+    border-radius: 28px;
+    left: -158px;
+    transition: 1s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    grid-area: img-5;
+    background-image: url("../img/trailers/far-cry-6-img-5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-1:hover,
+.img-2:hover,
+.img-3:hover,
+.img-4:hover,
+.img-5:hover {
+    border: 4px solid #D99BFF;
+}
+
+
+.requirements-container{
+    width: 85%;
+    height: 800px;
+    margin: 0px auto;
+}
+
+.requirements-container h1{
+    position: relative;
+    padding: 20px;
+    margin: 0px 0px 0px 0px;
+    left: -20px;
+}
+.Minimun-requirements {
+    width: 65%;
+    height: 300px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 20px;
+    z-index: 110;
+    background: rgba(109, 109, 109, 0.3);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.Minimun-requirements h2 {
+    margin: 0px 0px 15px 20px;
+    font-size: 18px;
+}
+
+.Minimun-requirements .top-bar {
+    height: 50px;
+    border-radius: 20px 20px 0px 0px;
+}
+.title-req {
+    width: 220px;
+}
+
+.title-req p{
+    display: flex;
+    justify-content: end;
+    font-size: 15px;
+    color: rgb(143, 143, 143);
+}
+
+.desc-req {
+    position: relative;
+    width: 500px;
+    left: 250px;
+    top: -160px;
+}
+
+.desc-req p{
+    display: flex;
+    justify-content: start;
+    font-size: 15px;
+    color: #fff;
+}
+
+.recommended-requrirements {
+    margin-top: 70px;
+}
+
+.order-details {
+    position: relative;
+    left: 1150px;
+    width: 25%;
+    height: 550px;
+    top: -607px;
+}
+
+.order-details .desc-req {
+    margin: 45px 0px 0px 0px;;
+}
+
+.separate {
+    margin: 0px 0px 42px 0px;
+}
+
+.order-details .title-req p{
+    position: relative;
+}
+
+.release, .producer, .developers {
+    top: 157px;
+}
+
+.works {
+    top: 200px;
+}
+
+
+
+
+
+
+
+
+/* SQUARES STYLES */
+.squares,
+.squares2,
+.squares3,
+.squares4,
+.squares5 {
+    position: absolute;
+    background: -webkit-linear-gradient(120deg, #8A00DA, #520081, #1f0031);
+    width: 200px;
+    height: 200px;
+    opacity: 0.4;
+    rotate: 120deg;
+    top: -10px;
+    left: -68px;
+    z-index: 1;
+}
+
+.squares2 {
+    top: -120px;
+    left: 1300px;
+    rotate: 20deg;
+}
+
+/* .squares3 {
+    top: 300px;
+    left: 1200px;
+    rotate: -50deg;
+} */
+.squares4 {
+    top: 850px;
+    left: 300px;
+    rotate: 20deg;
+}
+
+.squares5 {
+    top: 500px;
+    left: 1850px;
+    rotate: 120deg;
+}
+
+
+/* Description-product */
+
+.long-description{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0px 0px 145px;
+    text-align: justify;
+}
+
+.long-description h1{
+    line-height: 60px;
+}
+
+.long-description p{
+    margin-top: 22px;
+    font-size: 20px;
+    text-align: justify;
+    font-weight: 400;
+}
