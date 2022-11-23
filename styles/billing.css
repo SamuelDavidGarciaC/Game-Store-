@@ -1,6 +1,7 @@
 * {
-  font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+
 body {
     Overflow: hidden;
     background-color: rgb(0, 0, 0);
@@ -17,42 +18,25 @@ nav {
     color: #fff;
 }
 
-.form h1 {
-    padding: 20px 0px 15px 0px;
-    font-size: 40px;
-    font-weight: 500;
-}
-
-.container-contact {
+.container-billing {
     display: flex;
     flex-direction: row;
     flex: 22%;
     position: relative;
     margin: 0px auto;
     width: 95%;
-    height: 650px;
-    border-radius: 20px; 
+    height: 40.625rem;
+    border-radius: 1.25rem; 
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(5px);
+    justify-content: space-between;
 }
 
-.container-img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 500px;
-    height: 100%;
-}
-
-.container-img img {
-    width: 380px;   
-}
-
+/* copy */
 .form {
     position: relative;
-    width: 850px;
+    width: 53.125rem;
     height: 80%;
 }
 
@@ -141,85 +125,6 @@ button:hover {
   background-color: #B74CDC;
 }
 
-.contact-info {
-  position: relative;
-  font-size: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0px auto;
-  width: 500px;
-  text-align: center;
-}
-
-.icons-contact .icon{
-  padding: 0px 0px 200px 0px;
-  font-size: 40px;
-  letter-spacing: 40px;
-}
-
-.icons-contact h2{
-  position: relative;
-  top: -150px;
-  font-weight: 400;
-}
-
-.icons-contact h1 {
-  position: relative;
-  top: -50px;
-  text-transform: uppercase;
-}
-
-.fa-twitter {
-  color: #00ADEF;
-  border: 1px solid #fff;
-  border-radius: 10px;
-}
-
-.fa-facebook {
-  color: #0955B5;
-  border: 1px solid #fff;
-  border-radius: 10px;
-}
-
-.fa-instagram {
-  color: #c50e88;
-  border: 1px solid #fff;
-  border-radius: 10px;
-}
-/* Deme un momento ya continuo, mi mama me necesita, ok */
-/* SQUARES STYLES */
-.squares,.squares2,.squares3,.squares4,.squares5{
-  position: absolute;
-  background: -webkit-linear-gradient(120deg, #8A00DA,#520081, #1f0031);
-  width: 200px;
-  height: 200px;
-  opacity: 0.4;
-  rotate: 120deg;
-  top: -10px;
-  left: -68px;
-  z-index: 0;
-}
-
-.squares2 {
-  top: -120px;
-  left: 1300px;
-  rotate: 20deg;
-}
-.squares3 {
-  top: 500px;
-  left: 860px;
-  rotate: -50deg;
-  z-index: 0;
-}
-.squares4 {
-  top: 850px;
-  left: 300px;
-  rotate: 20deg;
-}
-
-.squares5 {
-  top: 500px;
-  left: 1850px;
-  rotate: 120deg;
+.comtact-info {
+  
 }

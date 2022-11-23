@@ -1,77 +1,144 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>conectese a la lloamada -->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SHOPPING CART</title>
-     <!-- link font awesome icons -->
-     <script src="https://kit.fontawesome.com/53bf4710fa.js" crossorigin="anonymous"></script>
+    <!-- link font awesome icons -->
+    <script src="https://kit.fontawesome.com/53bf4710fa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./index.html" />
     <link rel="stylesheet" href="./styles/shoppingcart.css">
 </head>
+
 <body>
 
-        <nav class="navbar">
-            <div class="logo"><a href="./index.html">Shop's Name</a></div>
-            <ul class="items">
-                <li class="active"><a href="./index.html">Home</a></li>
-                <li><a href="./products.html">Products</a></li>
-                <li><a href="./categories.html">Categories</a></li>
-                <li><a href="./support.html">Support</a></li>
-            </ul>
-            <div class="items-left">
-                <a href="#">
-                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
-                </a>
-                <a href="./shoppingcart.html">
-                    <li><i class="fa-solid fa-cart-shopping"></i></li>
-                </a>
-            </div>
-        </nav>
+    <nav class="navbar">
+        <div class="logo"><a href="./index.html">Shop's Name</a></div>
+        <ul class="items">
+            <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="./products.html">Products</a></li>
+            <li><a href="./categories.html">Categories</a></li>
+            <li><a href="./support.html">Support</a></li>
+        </ul>
+        <div class="items-left">
+            <a href="#">
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            </a>
+            <a href="./shoppingcart.html">
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </a>
+        </div>
+    </nav>
 
     <h1 class="title-shopping-cart">You cart</h1>
 
     <div class="purchased-game-container">
         <div class="sub-purchased-game-container">
-        <div class="game-container">
-                <img class="front-page-img" src="./img/action/ancho-far-cry-6.jpg"/>
-        </div>
+            <div class="game-container">
+                <img class="front-page-img" src="./img/action/ancho-far-cry-6.jpg" />
+                <h1 class="title-your-cart">
+                    Far Cry 6
+                </h1>
+            </div>
 
-        <div class="game-container">
-                <img class="front-page-img" src="./img/action/ancho-battlefield-4.jpg"/>
-        </div>
+            <div class="game-container">
+                <img class="front-page-img" src="./img/action/ancho-battlefield-4.jpg" />
+                <h1 class="title-your-cart">
+                    Battlefield 4
+                </h1>
+                <h2 class="price">
 
-        <div class="game-container">
-            <img class="front-page-img" src="./img/adventure/ancho-horizon-zero-down.jpg" />
-        </div>
+                </h2>
+            </div>
 
-        <div class="game-container">
-            <img class="front-page-img" src="./img/Horror/ancho-metro-exodus.jpg" />
-        </div>
-    </div>
-    <div class="two-sub-purchased-game-container">
-        <div class="cost-chart">
+            <div class="game-container">
+                <img class="front-page-img" src="./img/adventure/ancho-horizon-zero-down.jpg" />
+                <h1 class="title-your-cart">
+                    Horizon Zero Down
+                </h1>
+            </div>
 
-        </div>
-    </div>
-
-    <div class="discover-section">
-        <div class="discover">
-            <button>Discover</button>
-            <div class="front-pages">
-                <img class="front-page-img" src="img/Horror/dead-by-dayligth.jpg">
-                <img class="front-page-img" src="img/action/battlefield-5.jpeg">
-
-                <img class="front-page-img" src="img/adventure/NBA-2K22.jpeg">
-
-                <img class="front-page-img" src="img/action/raimbow-six-siege.jpg">
-
-                <img class="front-page-img" src="img/adventure/life-is-strange.jpg">
+            <div class="game-container">
+                <img class="front-page-img" src="./img/Horror/ancho-metro-exodus.jpg" />
+                <h1 class="title-your-cart">
+                    Metro Exodus
+                </h1>
             </div>
         </div>
-    </div>
+        <div class="two-sub-purchased-game-container">
+            <div class="cost-chart">
+
+            </div>
+        </div>
+
+
+        <!-- DISCOVER -->
+        <div class="discover-section">
+            <div class="discover">
+                <button>Discover</button>
+                <div class="front-pages">
+
+                    <div class="discover-img">
+                        <img class="front-page-img" src="img/Horror/dead-by-dayligth.jpg">
+                        <h3 class="title-games-discover">Dead By Daylight
+                        </h3>
+                        <h4 class="price-games-dicover">$13.50</h4>
+                        <div class="price-with-discount">
+                            <h4 class="strikethrough">$18.50</h4>
+                            <h4 class="discount">27%</h4>
+                        </div>
+                    </div>
+
+                    <div class="discover-img">
+                        <img class="front-page-img" src="img/action/battlefield-5.jpeg">
+                        <h3 class="title-games-discover">Battlefield V</h3>
+                        <h4 class="price-games-dicover">$13.50</h4>
+                        <div class="price-with-discount">
+                            <h4 class="strikethrough">$18.50</h4>
+                            <h4 class="discount">27%</h4>
+                        </div>
+                    </div>
+
+                    <div class="discover-img">
+                        <img class="front-page-img" src="img/adventure/NBA-2K22.jpeg">
+                        <h3 class="title-games-discover">NBA 2K22
+                        </h3>
+                        <h4 class="price-games-dicover">$13.50</h4>
+                        <div class="price-with-discount">
+                            <h4 class="strikethrough">$18.50</h4>
+                            <h4 class="discount">27%</h4>
+                        </div>
+                    </div>
+
+                    <div class="discover-img">
+                        <img class="front-page-img" src="img/action/raimbow-six-siege.jpg">
+                        <h3 class="title-games-discover">Raimbow Six Siege
+                        </h3>
+                        <h4 class="price-games-dicover">$13.50</h4>
+                        <div class="price-with-discount">
+                            <h4 class="strikethrough">$18.50</h4>
+                            <h4 class="discount">27%</h4>
+                        </div>
+                    </div>
+
+                    <div class="discover-img">
+                        <img class="front-page-img" src="img/adventure/life-is-strange.jpg">
+                        <h3 class="title-games-discover">Life Is Strange Remastered
+                        </h3>
+                        <h4 class="price-games-dicover">$13.50</h4>
+                        <div class="price-with-discount">
+                            <h4 class="strikethrough">$18.50</h4>
+                            <h4 class="discount">27%</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
 </body>
+
 </html>
