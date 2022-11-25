@@ -39,36 +39,36 @@
         <!-- form  -->
         <div class="form">
             <h1>Contact Us</h1>
-            <form action="/">
+            <form action="/mail.php" method="post">
                 <div class="form-container">
                     <ul>
                         <div class="uno">
                             <li>
                                 <label for="name"></label>
-                                <input type="text" id="name" name="user_name" placeholder="First Name">
+                                <input type="text" id="name" name="nombre" placeholder="first Name">
                             </li>
                         </div>
 
                         <div class="dos">
                             <li>
                                 <label for="name"></label>
-                                <input type="text" id="lastName" name="user_lastName" placeholder="Last Name">
+                                <input type="text" id="lastName" name="nombre2" placeholder="Last Name">
                             </li>
                         </div>
                         <div class="tres">
                             <li>
                                 <label for="mail"></label>
-                                <input type="mail" id="email" name="user_Mail" placeholder="Enter Email">
+                                <input type="mail" id="email" name="correo" placeholder="Enter Email">
                             </li>
                         </div>
                         <div class="cuatro">
                             <li>
                                 <label for="msg"></label>
-                                <textarea id="msg" name="user_message" placeholder="Your Message"></textarea>
+                                <textarea id="msg" name="mensaje" placeholder="Your Message"></textarea>
                             </li>
                         </div>
                     </ul>
-                    <div class="button-submit"><button>Submit</button></div>
+                    <div class="button-submit"><input type="submit" name="send"></div>
                 </div>
             </form>
         </div>
@@ -97,6 +97,10 @@
 <div class="squares3"></div>
 <div class="squares4"></div>
 <div class="squares5"></div>
+
+<?php
+include("mail.php")
+?>
 </body>
 
 </html>

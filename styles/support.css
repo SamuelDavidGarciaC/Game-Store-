@@ -119,25 +119,27 @@ form textarea {
 .button-submit {
   width: 100%;
   margin: 0px auto;
-}
+}https://www.bing.com/images/search?view=detailV2&ccid=52Oznj7f&id=8E362B84606ED1845D077135C97A77DBCD72A627&thid=OIP.52Oznj7fY4rnzKlbOxxupAHaH7&mediaurl=https%3a%2f%2f2.bp.blogspot.com%2f-YjwnX3akXjU%2fWfjRwfSTqSI%2fAAAAAAAHke0%2fmGEiNrjqEV4hyxkw9ObE2MSGT3mgcFRGACLcBGAs%2fs1600%2fspinner_PNG32.png&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.e763b39e3edf638ae7cca95b3b1c6ea4%3frik%3dJ6Zyzdt3esk1cQ%26pid%3dImgRaw%26r%3d0&exph=1197&expw=1118&q=imagen+de+spinner+animado&simid=608048351810955938&FORM=IRPRST&ck=1F8C0F10B574098E3745C904890DFBCE&selectedIndex=24&ajaxhist=0&ajaxserp=0
 
-button {
+
+.button-submit input {
   position: relative;
   background-color: #D99BFF;
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 600;
   text-transform: uppercase;
   left: 70%;
   width: 300px;
-  height: 60px;
+  height: 70px;
   border-radius: 15px;
   bottom: 30px;
   cursor: pointer;
   transition: 1s;
+  text-align: center;
 }
 
-button:hover {
+.button-submit input:hover {
   background-color: #B74CDC;
 }
 
