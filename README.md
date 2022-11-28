@@ -1,4 +1,3 @@
-# Game-Store
 
 <h1 align="center"> GameStore </h1> 
 
