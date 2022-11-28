@@ -8,6 +8,7 @@
     <!-- link font awesome icons -->
     <script src="https://kit.fontawesome.com/53bf4710fa.js" crossorigin="anonymous"></script>
     <!-- Link to styles css -->
+    <script src="scripts/index.js"></script>
     <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body style="overflow: hidden;">
@@ -15,16 +16,27 @@
     <header>
     <!-- Create navbar with the items -->
     <nav class="navbar">
-        <div class="logo"><a href="./index.html">Shop's Name</a></div>
-        <ul class="items">
-            <li class="active"><a href="./index.html">Home</a></li>
-            <li><a href="./products.html">Products</a></li>
-            <li ><a href="./categories.html">Categories</a></li>
-            <li><a href="./support.html">Support</a></li>
-        </ul>
+        <div class="logo"><a href="./index.html">GameStore</a></div>
+        <div class="responsive">
+            <ul class="items" id="items">
+                <div class="logo-res"><a href="./index.html">GameStore</a><i class="fa-solid fa-xmark" id="xmark" onclick="hideMenu()"></i></div>
+                <li class="active"><a href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="./products.html"><i class="fa-solid fa-paperclip"></i> Products</a></li>
+                <li ><a href="./categories.html"><i class="fa-solid fa-list"></i> Categories</a></li>
+                <li><a href="./support.html"><i class="fa-solid fa-envelope"></i> Support</a></li>
+
+                <div class="items-res">
+                    <a href="#"><li><i class="fa-solid fa-magnifying-glass"></i></li></a>
+                    <a href="./shoppingcart.html"><li><i class="fa-solid fa-cart-shopping"></i></li></a>
+                </div>
+            </ul>
+        </div>
             <div class="items-left">
-                <a href="./billing.html"><li><i class="fa-solid fa-magnifying-glass"></i></li></a>
+                <a href="#"><li><i class="fa-solid fa-magnifying-glass"></i></li></a>
                 <a href="./shoppingcart.html"><li><i class="fa-solid fa-cart-shopping"></i></li></a>
+                <label for="check" class="checkbtn" id="checkbtn" onclick="showMenu()">
+                    <li><i class="fa-solid fa-bars checkbtn" ></i></li>
+                </label>
             </div>
     </nav>
     
@@ -38,7 +50,7 @@
             <a href="./products.html"><div class="button"><li><i class="fa-solid fa-gamepad"></i></li>HERE</div></a>
             
 
-            <div id="spartan">
+            <div id="spartan" class="spartan">
                 <img src="img/spartan-image.png" alt="image-spartan">
             </div>
         </div>
@@ -54,4 +66,5 @@
     
 
 </body>
+
 </html>

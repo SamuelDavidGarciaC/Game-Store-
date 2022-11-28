@@ -16,22 +16,29 @@
 <body>
   <h1 class="title-categories">Categories</h1>
   <nav class="navbar">
-    <div class="logo"><a href="./index.html">Shop's Name</a></div>
-    <ul class="items">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./products.html">Products</a></li>
-      <li class="active"><a href="./categories.html">Categories</a></li>
-      <li><a href="./support.html">Support</a></li>
-    </ul>
-    <div class="items-left">
-      <a href="#">
-        <li><i class="fa-solid fa-magnifying-glass"></i></li>
-      </a>
-      <a href="./shoppingcart.html">
-        <li><i class="fa-solid fa-cart-shopping"></i></li>
-      </a>
+    <div class="logo"><a href="./index.html">GameStore</a></div>
+    <div class="responsive">
+        <ul class="items" id="items">
+            <div class="logo-res"><a href="./index.html">GameStore</a><i class="fa-solid fa-xmark" id="xmark" onclick="hideMenu()"></i></div>
+            <li><a href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="./products.html"><i class="fa-solid fa-paperclip"></i> Products</a></li>
+            <li class="active"><a href="./categories.html"><i class="fa-solid fa-list"></i> Categories</a></li>
+            <li><a href="./support.html"><i class="fa-solid fa-envelope"></i> Support</a></li>
+
+            <div class="items-res">
+                <a href="#"><li><i class="fa-solid fa-magnifying-glass"></i></li></a>
+                <a href="./shoppingcart.html"><li><i class="fa-solid fa-cart-shopping"></i></li></a>
+            </div>
+        </ul>
     </div>
-  </nav>
+        <div class="items-left">
+            <a href="#"><li><i class="fa-solid fa-magnifying-glass"></i></li></a>
+            <a href="./shoppingcart.html"><li><i class="fa-solid fa-cart-shopping"></i></li></a>
+            <label for="check" class="checkbtn" id="checkbtn" onclick="showMenu()">
+                <li><i class="fa-solid fa-bars checkbtn" ></i></li>
+            </label>
+        </div>
+</nav>
 
   <div class="category-genres">
     <!-- ACTION CATEGORY -->
@@ -40,7 +47,7 @@
       <div class="front-pages">
         <div class="front-page-1">
           <img class="front-page-img" src="img/action/gtav.jpg" />
-          <h3 class="title-games-discover"></h3>
+          <h3 class="title-games-discover">Grand Theft Auto V</h3>
           <h4 class="price-games-dicover">$13.50</h4>
           <div class="price-with-discount">
             <h4 class="strikethrough">$18.50</h4>
@@ -359,7 +366,7 @@
         </div>
         <div class="front-page-33">
           <img class="front-page-img" src="img/adventure/stranded-deep.jpeg" />
-          <h3 class="title-games-discover"Stranded Deep></h3>
+          <h3 class="title-games-discover">Stranded Deep</h3>
           <h4 class="price-games-dicover">$13.50</h4>
           <div class="price-with-discount">
             <h4 class="strikethrough">$18.50</h4>
@@ -490,6 +497,8 @@
       </div>
     </div>
   </div>
+
+  <script src="scripts/index.js"></script>
 </body>
 
 </html>

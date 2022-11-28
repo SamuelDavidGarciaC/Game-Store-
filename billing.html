@@ -4,79 +4,167 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
     <title>BILLING</title>
-    <link rel="stylesheet" href="./styles/index.css" />
     <link rel="stylesheet" href="./styles/billing.css">
-
+    <link rel="stylesheet" href="./styles/index.css">
     <script src="https://kit.fontawesome.com/53bf4710fa.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
 
     <nav class="navbar">
-        <div class="logo"><a href="./index.html">Shop's Name</a></div>
-        <ul class="items">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./products.html">Products</a></li>
-            <li class="active"><a href="./categories.html">Categories</a></li>
-            <li><a href="./support.html">Support</a></li>
-        </ul>
+        <div class="logo"><a href="./index.html">GameStore</a></div>
+        <div class="responsive">
+            <ul class="items" id="items">
+                <div class="logo-res"><a href="./index.html">GameStore</a><i class="fa-solid fa-xmark" id="xmark"
+                        onclick="hideMenu()"></i></div>
+                <li><a href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="./products.html"><i class="fa-solid fa-paperclip"></i> Products</a></li>
+                <li><a href="./categories.html"><i class="fa-solid fa-list"></i> Categories</a></li>
+                <li class="#"><a href="./support.html"><i class="fa-solid fa-envelope"></i> Support</a></li>
+
+                <div class="items-res">
+                    <a href="#">
+                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    </a>
+                    <a href="./shoppingcart.html">
+                        <li><i class="fa-solid fa-cart-shopping"></i></li>
+                    </a>
+                </div>
+            </ul>
+        </div>
         <div class="items-left">
-            <a href="./billing.html">
+            <a href="#">
                 <li><i class="fa-solid fa-magnifying-glass"></i></li>
             </a>
             <a href="./shoppingcart.html">
                 <li><i class="fa-solid fa-cart-shopping"></i></li>
             </a>
+            <label for="check" class="checkbtn" id="checkbtn" onclick="showMenu()">
+                <li><i class="fa-solid fa-bars checkbtn"></i></li>
+            </label>
         </div>
-    </nav> 
+    </nav>
 
 
-    <!-- second part -->
-    <div class="container-billing">
-        <div class="form">
-            <h1>Billing</h1>
-            <form action="/">
-                <div class="form-container">
-                    <ul>
-                        <div class="uno">
-                            <li>
-                                <label for="name"></label>
-                                <input type="text" id="name" name="user_name" placeholder="First Name">
-                            </li>
-                        </div>
 
-                        <div class="dos">
-                            <li>
-                                <label for="name"></label>
-                                <input type="text" id="lastName" name="user_lastName" placeholder="Last Name">
-                            </li>
-                        </div>
-                        <div class="tres">
-                            <li>
-                                <label for="mail"></label>
-                                <input type="mail" id="Adress" name="user_adress" placeholder="Adress">
-                            </li>
-                        </div>
-                        <div class="cuatro">
-                            <li>
-                                <label for="msg"></label>
-                                <textarea id="msg" name="user_message" placeholder="Your Message"></textarea>
-                            </li>
-                        </div>
-                    </ul>
-                    <div class="button-submit"><button>Submit</button></div>
+    <!-- Section of billing -->
+
+    <div class="main-container">
+
+        <div class="part-left">
+
+            <div class="container-tittle-billing">
+                <h1 class="title-billing">Billing</h1>
+            </div>
+
+            <div class="personal-data">
+                <input type="text" id="name" name="user_name" placeholder="First Name">
+                <input type="text" id="lastName" name="user_lastName" placeholder="Last Name">
+                <input type="text" id="adress" name="adress" placeholder="Address">
+            </div>
+
+            <!-- PAYMENT METHODS -->
+            <div class="pay-meth-container">
+            <h1 class="title-pay-meth">Payment methods</h1>
+            </div>
+            
+            <div class="payment">
+                <div class="debit-credit-cards">
+                    <img src="./img/icons-and-more sources-important/Credit-debit-card-png.png" alt="">
+                    <h1>Credit / Debit Card</h1>
                 </div>
-            </form>
+
+                <div class="card-number">
+                    <h2>Card Number</h2>
+                    <input type="text" id="card-number" placeholder="1234 5678 9012 3456">
+                </div>
+
+                <div class="expiration-date-CVV">
+                    <div class="cont-expiration-date">
+                        <h2>Expiration Date</h2>
+                        <input type="text" id="expiration-date" placeholder="MM/YY">
+                    </div>
+                    <div class="cont-CVV">
+                        <h2>CVV</h2>
+                        <input type="text" id="CVV" placeholder="3 Digits">
+                    </div>
+
+                </div>
+
+                <div class="card-name">
+                    <h2>Card Name</h2>
+                    <input type="text" id="card-name" placeholder="-----  -----">
+                </div>
+
+            </div>
+
+            <div class="digital-platforms">
+                <div class="container-paypal">
+                    <img src="./img/icons-and-more sources-important/png-logo-paypal.png" alt="Logo de Paypal">
+                    <h1>Paypal</h1>
+                </div>
+
+
+                <div class="container-nequi">
+                    <img src="./img/icons-and-more sources-important/png-logo-nequi.png" alt="Logo de Efecty">
+                    <h1>Nequi</h1>
+                </div>
+
+                <a href="https://wa.me/3114943047?text=Buen%20día%20quiero%20comprar%20estos%20juegos20%porfa"               class="container-whatsApp">
+                    <img src="./img/icons-and-more sources-important/png-logo-whatsapp.png" alt="Logo de WhatsApp">
+                    <h1>WhatsApp</h1>
+                </a>
+            </div>
+
         </div>
-        <div class="contact-info">
-            <div class="icons-contact">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
+
+        <div class="part-right">
+
+            <div class="far-cry-6-info-pay">
+                <div class="img-small-cover">
+                    <img src="./img/icons-and-more sources-important/far-cry-6-small.png" alt="">
+                </div>
+
+                <div class="text-information">
+                    <h1>Far Cry 6</h1>
+                    <h1>PlayStation</h1>
+                </div>
+            </div>
+
+            <div class="battlefield-4-info-pay">
+                <div class="img-small-cover">
+                    <img src="./img/icons-and-more sources-important/battlefield-4-small.png" alt="">
+                </div>
+
+                <div class="text-information">
+                    <h1>Battlefield 4</h1>
+                    <h1>PlayStation</h1>
+                </div>
+            </div>
+
+            <div class="right-down">
+
+                <div class="total-price-section">
+                    <h1>Total: </h1>
+                    <h1>$29.99</h1>
+                </div>
+                <button class="button-pay"><a href="https://wa.me/3114943047?text=Buen%20día%20quiero%20comprar%20estos%20juegos%20porfa">Pay</a></button>
+
+                <p class="terms-and-conditions">
+                    <input type="checkbox"> By clicking "Pay" I acknowledge that I have accepted the <span
+                        class="span-terms-and-conditions">
+                        terms and conditions </span> and the <span class="privacy-policy">privacy policy.</span>
+                </p>
+
             </div>
         </div>
+
+    </div>
+
 </body>
 
 </html>

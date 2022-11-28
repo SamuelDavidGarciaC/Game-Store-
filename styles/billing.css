@@ -1,130 +1,533 @@
-* {
-    font-family: 'Poppins', sans-serif;
+h1 {
+  width: 80%;
+  margin: auto;
 }
 
-body {
-    Overflow: hidden;
-    background-color: rgb(0, 0, 0);
-    color: #fff;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    height: 100px;
-    color: #fff;
-}
-
-.container-billing {
-    display: flex;
-    flex-direction: row;
-    flex: 22%;
-    position: relative;
-    margin: 0px auto;
-    width: 95%;
-    height: 40.625rem;
-    border-radius: 1.25rem; 
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
-    background-color: rgba(255, 255, 255, .15);  
-    backdrop-filter: blur(5px);
-    justify-content: space-between;
-}
-
-/* copy */
-.form {
-    position: relative;
-    width: 53.125rem;
-    height: 80%;
-}
-
-form{
+.main-container {
   display: grid;
-  padding: 10px 60px 60px 0px;
-  max-width: 400px;
-  width: 1000px;
-  grid-template-columns: 380px;
-  grid-template-rows: auto;
-  grid-template-areas: 
-    "name name . last last"
-    "email email email email"
-    "msg msg msg msg";
+  grid-template-columns: 60% 40%;
+  width: 95%;
+  max-width: 1920px;
+  margin: auto;
+  box-sizing: border-box;
 }
 
-form .dos {
-  position: relative;
+
+/* PERSONAL DATA */
+
+.part-left {
+  margin: 0px 0px 0px 0px;
+  box-sizing: border-box;
+  width: 90%;
+}
+
+.title-billing {
+  font-size: 50px;
+  margin: 0px 0px 25px 18px;
+}
+
+.personal-data {
   display: grid;
-  grid-template-columns: 380px;
-  left: 450px;
-  bottom: 87px;
+  grid-template-columns: repeat(2, 50%);
+  padding: 30px;
+  gap: 15px;
+  box-sizing: border-box;
 }
 
-input:focus, textarea:focus {
-  border: 2px solid #D99BFF;
-  transition: .5s;
-}
-
-form .tres {
-  position: relative;
-  display: grid;
-  grid-template-columns: 830px;
-  bottom: 75px;
-}
-
-form .cuatro {
-  position: relative;
-  display: grid;
-  grid-template-columns: 830px;
-  bottom: 60px;
-}
-
-
-form input, form textarea{
-  margin-bottom: 20px;
-  width: 100%;
-  padding: 20px;
-  box-sizing: border-box; 
-  border: none; 
-  color: #fff; 
-  font-size: 1em;
-  resize: none; 
-  background: #313131;
-  border-radius: 10px;
-  font-weight: 400;
-  border: 1px solid #fff;
-}
-
-form textarea {
-  height: 200px;
-}
-
-.button-submit {
-  width: 100%;
-  margin: 0px auto;
-}
-
-button {
-  position: relative;
-  background-color: #D99BFF;
+#name {
+  background-color: #424242CC;
   color: #fff;
-  font-size: 30px;
-  font-weight: 600;
-  text-transform: uppercase;
-  left: 70%;
-  width: 300px;
-  height: 60px;
-  border-radius: 15px;
-  bottom: 30px;
-  cursor: pointer;
+  border: 1px solid #fff;
+  height: 40px;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding: 40px;
+  margin: 0px 0px 25px 0px;
+  box-sizing: border-box;
+}
+
+#lastName {
+  background-color: #424242CC;
+  color: #fff;
+  border: 1px solid #fff;
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding: 40px;
+  margin: 0px 0px 25px 0px;
+  box-sizing: border-box;
+}
+
+#adress {
+  background-color: #424242CC;
+  color: #fff;
+  border: 1px solid #fff;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 32px;
+  padding: 40px;
+  margin: 0px 0px 25px 0px;
+  box-sizing: border-box;
+}
+
+/* PAYMENT METHODS */
+
+.title-pay-meth {
+  font-size: 50px;
+  margin: 0px 0px 25px 18px;
+}
+
+.debit-credit-cards {
+  display: flex;
+  margin: 10px 0px 30px 0px;
+}
+
+/* CARD NUMBER */
+.payment {
+  background-color: #424242CC;
+  border: 1px solid #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.card-number {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+
+#card-number {
+  height: 20px;
+  background-color: #424242CC;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0px 30px 0px;
+  font-size: 21px;
+}
+
+/* EXPIRATION DATE */
+
+.expiration-date-CVV {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  box-sizing: border-box;
+}
+
+.cont-expiration-date {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#expiration-date {
+  height: 20px;
+  background-color: #424242CC;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0px 30px 0px;
+  font-size: 21px;
+}
+
+#CVV {
+  height: 20px;
+  background-color: #424242CC;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0px 30px 0px;
+  font-size: 21px;
+}
+
+/* CARD NAME */
+
+.card-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+
+#card-name {
+  height: 20px;
+  background-color: #424242CC;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 10px;
+  padding: 20px;
+  font-size: 21px;
+}
+
+/* CONTAINER PAYPAL */
+
+.container-paypal {
+  display: flex;
+  background-color: #424242CC;
+  border: 1px solid #fff;
+  padding: 30px;
+  margin: 40px 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
   transition: 1s;
 }
 
-button:hover {
-  background-color: #B74CDC;
+.container-paypal:hover {
+  cursor: pointer;
+  background: #3757c2;
 }
 
-.comtact-info {
-  
+/* CONTAINER NEQUI */
+
+.container-nequi {
+  display: flex;
+  background-color: #424242CC;
+  border: 1px solid #fff;
+  padding: 30px;
+  margin: 40px 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: 1s;
+}
+
+.container-nequi:hover {
+  cursor: pointer;
+  background: #FFFFFF;
+}
+
+.container-whatsApp {
+  display: flex;
+  background-color: #424242CC;
+  border: 1px solid #fff;
+  padding: 30px;
+  margin: 40px 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  transition: 1s;
+}
+
+.container-whatsApp:hover {
+  cursor: pointer;
+  background: #60ce51;
+}
+
+
+/* PART RIGHT */
+
+/* FAR CRY 6 */
+.part-right {
+  background-color: #424242CC;
+  height: 750px;
+  width: 80%;
+  margin: 0px 0px 0px 100px;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.far-cry-6-info-pay {
+  display: grid;
+  grid-template-columns: repeat(2, 30% 70%);
+  padding: 20px;
+}
+
+.text-information {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 15px;
+}
+
+/* BATTLEFIELD 4  */
+
+.battlefield-4-info-pay {
+  display: grid;
+  grid-template-columns: repeat(2, 30% 70%);
+  padding: 20px;
+}
+
+
+
+/* RIGHT DOWN */
+
+.total-price-section {
+  display: grid;
+  grid-template-columns: repeat(2, 50% 50%);
+  font-size: 25px;
+  margin: 30px 0px 20px 0px;
+}
+
+.total-price-section h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.button-pay {
+  display: flex;
+  justify-content: center;
+  border-radius: 35px;
+  width: 60%;
+  margin: auto;
+  background-color: #BC5CDE;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 800;
+  padding: 15px;
+  transition: 1s;
+}
+
+.button-pay:hover {
+  background-color: #D99BFF;
+}
+
+.terms-and-conditions {
+  text-align: justify;
+  width: 78%;
+  font-size: 25px;
+  margin: 50px auto;
+}
+
+.span-terms-and-conditions {
+  color: #D99BFF;
+}
+
+.privacy-policy {
+  color: #D99BFF;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 878px) {
+  .part-right {
+    width: 100%;
+  }
+
+  .main-container {
+    display: flex;
+    flex: 2 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .part-right {
+    position: relative;
+    order: 1;
+    width: 70%;
+    justify-content: flex-end;
+  }
+
+  .total-price-section {
+    font-size: 15px;
+  }
+
+  .button-pay {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 400;
+    align-items: center;
+    transition: 0.25;
+  }
+
+  .terms-and-conditions {
+    font-size: 20px;
+  }
+
+  .title-billing,
+  .title-pay-meth {
+    font-size: 30px;
+  }
+
+  .personal-data input,
+  input::placeholder {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    font-size: 20px;
+  }
+
+  #adress {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    margin: 0px 0px 50px 50%;
+  }
+
+  .payment {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: 0px auto;
+  }
+
+  .card-number {
+    font-size: 15px;
+  }
+
+  .expiration-date-CVV {
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+  }
+
+  .card-name {
+    font-size: 15px;
+  }
+
+  .debit-credit-cards img {
+    width: 37%;
+    height: 70px;
+  }
+
+  .debit-credit-cards h1 {
+    font-size: 18px;
+    margin: 15px;
+  }
+
+  .container-paypal,
+  .container-efecty,
+  .container-whatsApp {
+    align-items: center;
+    justify-content: center;
+    display: grid;
+  }
+
+  .container-efecty h1 {
+    position: relative;
+    left: 8px;
+  }
+
+  .container-whatsApp h1 {
+    position: relative;
+    left: -20px;
+  }
+}
+
+
+@media (max-width: 412px) {
+
+  .container-tittle-billing{
+    width: 80%;
+    margin: auto;
+  }
+
+  .title-billing {
+    display: flex;
+    justify-content: center;
+  }
+
+  .part-left {
+    width: 100%;
+  }
+
+  .title-pay-meth {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .title-pay-meth {
+    display: flex;
+    justify-content: center;
+    flex-direction: nowrap;
+  }
+
+  .personal-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  .debit-credit-cards {
+    width: 80%;
+    margin: auto;
+  }
+
+  #name,
+  #lastName,
+  #adress {
+    margin: auto;
+    padding: 10px;
+    width: 80%;
+  }
+
+  .payment {
+    width: 80%;
+  }
+
+  .payment h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+  }
+
+  #card-number,
+  #expiration-date,
+  #card-name,
+  #CVV {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 10px;
+    width: 90%;
+    margin: 20px auto;
+  }
+
+
+  .digital-platforms {
+    width: 80%;
+    margin: auto;
+  }
+
+  .container-paypal h1 {
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .container-efecty h1 {
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .container-whatsApp h1 {
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  /* PART RIGHT */
+
+  .part-right{
+    width: 80%;
+    margin: auto;
+  }
+
+  .text-information{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 7px;
+  }
+
+  .far-cry-6-info-pay{
+    grid-template-columns: repeat(2, 50% 50%);
+  }
+
+  .battlefield-4-info-pay{
+    grid-template-columns: repeat(2, 50% 50%);
+  }
 }
