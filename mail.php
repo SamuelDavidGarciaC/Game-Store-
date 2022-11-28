@@ -6,6 +6,7 @@ $nombre = $_POST['nombre2'];
 $mensaje = $_POST['mensaje'];
 
 $destinatario = "jefersonmesa13@gmail.com";
+$destinatario = "sd2882418@gmail.com";
 $asunto = "Envio de correo de prueba con PHP";
 $cuerpo = '
     <html>

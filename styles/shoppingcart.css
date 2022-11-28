@@ -60,6 +60,7 @@
 .cost-shart {
   background-color: #424242CC;
   padding: 25px;
+  height: 650px;
   border-radius: 20px;
 }
 
@@ -71,14 +72,14 @@
   line-height: 80px;
 }
 
-.text-left{
+.text-left {
   color: #8F8F8F;
 }
 
-.text-right{
+.text-right {
   display: flex;
   flex-direction: column;
-  align-items:center;
+  align-items: center;
 }
 
 .email {
@@ -101,7 +102,7 @@
 
 /* BUTTON */
 
-.proceed-with-the-payment{
+.proceed-with-the-payment {
   display: grid;
   width: 80%;
   margin: auto;
@@ -109,7 +110,7 @@
 }
 
 /* BUTTONS */
-#payment{
+#payment {
   font-size: 30px;
   border-radius: 40px;
   background-color: #BC5CDE;
@@ -118,21 +119,21 @@
   transition: 1s;
 }
 
-#payment:hover{
+#payment:hover {
   background-color: #D99BFF;
 }
 
-.continue-shopping{
+.continue-shopping {
   display: flex;
   justify-content: center;
-  margin: 20px 0px ;
+  margin: 20px 0px;
   font-size: 20px;
   background-color: transparent;
   color: #8F8F8F;
   border-radius: 20px;
 }
 
-.continue-shopping:hover{
+.continue-shopping:hover {
   background-color: #8F8F8F;
 }
 
@@ -204,8 +205,194 @@
 }
 
 /* RESPONSIVE */
-@media screen and (max-width: 400px){
+@media screen and (max-width: 1100px) {
   .cost-shart {
-    width:100%
+    width: 100%
+  }
+
+  .front-pages {
+    display: inline-flex;
+    flex: 2 1 auto;
+    flex-direction: column;
+    width: 55%;
+    padding: 5rem;
+    justify-content: center;
+    margin: 0px 0px 0px 220px;
+  }
+
+  .principal-container {
+    display: flex;
+    flex: 2 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0px auto;
+  }
+
+  .added-games img {
+    width: 500px;
+    height: 155px;
+  }
+
+  .added-games {
+    position: relative;
+    width: 800px;
+    height: 200px;
+  }
+
+  .info h1 {
+    font-size: 15px;
+  }
+
+  .cost-shart .email input {
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .text-cost-shart {
+    font-size: 12px;
+  }
+
+  .proceed-with-the-payment button {
+    position: relative;
+    top: -30px;
+  }
+
+  .proceed-with-the-payment a {
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 898px) {
+  .cost-shart {
+    width: 100%
+  }
+
+  .front-pages {
+    display: inline-flex;
+    flex: 2 1 auto;
+    flex-direction: column;
+    width: 80%;
+    padding: 3rem;
+    margin: 0px 0px 0px 70px;
+  }
+
+  .principal-container {
+    display: flex;
+    flex: 2 1 auto;
+    flex-direction: column;
+    padding: 1rem;
+
+  }
+
+  .added-games img {
+    width: 130px;
+    height: 90px;
+  }
+
+  .added-games {
+    position: relative;
+    display: flex;
+    width: 100%;
+  }
+
+  .info h1 {
+    font-size: 9px;
+  }
+
+  .cost-shart .email input {
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .text-cost-shart {
+    font-size: 10px;
+  }
+
+  .proceed-with-the-payment button {
+    width: 280px;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+  }
+
+  .proceed-with-the-payment a {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .front-page-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 420px) {
+
+  .main-added-games {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .added-games img {
+    width: 90px;
+    height: 80px;
+  }
+
+  .added-games {
+    position: relative;
+    display: flex;
+    width: 100%;
+    margin: auto;
+    margin: 0px 0px 20px 0px;
+  }
+
+
+  .proceed-with-the-payment button {
+    width: 230px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+  }
+
+  .proceed-with-the-payment a {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  input::placeholder {
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .front-pages{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .quantity-games{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+  }
+
+  .proceed-with-the-payment button{
+    width: 95%;
+    height: auto;
+    margin: 15px auto;
   }
 }

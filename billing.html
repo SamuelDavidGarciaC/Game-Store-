@@ -14,14 +14,28 @@
 </head>
 
 <body>
+
     <nav class="navbar">
-        <div class="logo"><a href="./index.html">Shop's Name</a></div>
-        <ul class="items">
-            <li class="active"><a href="./index.html">Home</a></li>
-            <li><a href="./products.html">Products</a></li>
-            <li><a href="./categories.html">Categories</a></li>
-            <li><a href="./support.html">Support</a></li>
-        </ul>
+        <div class="logo"><a href="./index.html">GameStore</a></div>
+        <div class="responsive">
+            <ul class="items" id="items">
+                <div class="logo-res"><a href="./index.html">GameStore</a><i class="fa-solid fa-xmark" id="xmark"
+                        onclick="hideMenu()"></i></div>
+                <li><a href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="./products.html"><i class="fa-solid fa-paperclip"></i> Products</a></li>
+                <li><a href="./categories.html"><i class="fa-solid fa-list"></i> Categories</a></li>
+                <li class="#"><a href="./support.html"><i class="fa-solid fa-envelope"></i> Support</a></li>
+
+                <div class="items-res">
+                    <a href="#">
+                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    </a>
+                    <a href="./shoppingcart.html">
+                        <li><i class="fa-solid fa-cart-shopping"></i></li>
+                    </a>
+                </div>
+            </ul>
+        </div>
         <div class="items-left">
             <a href="#">
                 <li><i class="fa-solid fa-magnifying-glass"></i></li>
@@ -29,6 +43,9 @@
             <a href="./shoppingcart.html">
                 <li><i class="fa-solid fa-cart-shopping"></i></li>
             </a>
+            <label for="check" class="checkbtn" id="checkbtn" onclick="showMenu()">
+                <li><i class="fa-solid fa-bars checkbtn"></i></li>
+            </label>
         </div>
     </nav>
 
@@ -45,13 +62,16 @@
             </div>
 
             <div class="personal-data">
-                <input type="text" id="name" name="user_name" placeholder="first Name">
+                <input type="text" id="name" name="user_name" placeholder="First Name">
                 <input type="text" id="lastName" name="user_lastName" placeholder="Last Name">
-                <input type="text" id="adress" name="adress" placeholder="Adress">
+                <input type="text" id="adress" name="adress" placeholder="Address">
             </div>
 
             <!-- PAYMENT METHODS -->
+            <div class="pay-meth-container">
             <h1 class="title-pay-meth">Payment methods</h1>
+            </div>
+            
             <div class="payment">
                 <div class="debit-credit-cards">
                     <img src="./img/icons-and-more sources-important/Credit-debit-card-png.png" alt="">
@@ -82,23 +102,23 @@
 
             </div>
 
+            <div class="digital-platforms">
+                <div class="container-paypal">
+                    <img src="./img/icons-and-more sources-important/png-logo-paypal.png" alt="Logo de Paypal">
+                    <h1>Paypal</h1>
+                </div>
 
-            <div class="container-paypal">
-                <img src="./img/icons-and-more sources-important/png-logo-paypal.png" alt="Logo de Paypal">
-                <h1>Paypal</h1>
+
+                <div class="container-nequi">
+                    <img src="./img/icons-and-more sources-important/png-logo-nequi.png" alt="Logo de Efecty">
+                    <h1>Nequi</h1>
+                </div>
+
+                <a href="https://wa.me/3114943047?text=Buen%20día%20quiero%20comprar%20estos%20juegos20%porfa"               class="container-whatsApp">
+                    <img src="./img/icons-and-more sources-important/png-logo-whatsapp.png" alt="Logo de WhatsApp">
+                    <h1>WhatsApp</h1>
+                </a>
             </div>
-
-
-            <div class="container-efecty">
-                <img src="./img/icons-and-more sources-important/png-logo-efecty.png" alt="Logo de Efecty">
-                <h1>Efecty</h1>
-            </div>
-
-            <div class="container-whatsApp">
-                <img src="./img/icons-and-more sources-important/png-logo-whatsapp.png" alt="Logo de WhatsApp">
-                <h1>WhatsApp</h1>
-            </div>
-
 
         </div>
 
@@ -132,10 +152,11 @@
                     <h1>Total: </h1>
                     <h1>$29.99</h1>
                 </div>
-                <button class="button-pay"><a href="#">Pay</a></button>
+                <button class="button-pay"><a href="https://wa.me/3114943047?text=Buen%20día%20quiero%20comprar%20estos%20juegos%20porfa">Pay</a></button>
 
                 <p class="terms-and-conditions">
-                    By clicking "Pay" I acknowledge that I have accepted the <span class="span-terms-and-conditions">
+                    <input type="checkbox"> By clicking "Pay" I acknowledge that I have accepted the <span
+                        class="span-terms-and-conditions">
                         terms and conditions </span> and the <span class="privacy-policy">privacy policy.</span>
                 </p>
 

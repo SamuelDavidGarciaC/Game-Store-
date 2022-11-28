@@ -6,22 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SUPPORT</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.js">
+    </script>
     <!-- link font awesome icons -->
     <script src="https://kit.fontawesome.com/53bf4710fa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/support.css">
+    
 </head>
 
-<body>
+<body onload="validation()">
     <!-- Create navbar with the items -->
     <nav class="navbar">
-        <div class="logo"><a href="./index.html">Shop's Name</a></div>
-        <ul class="items">
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./products.html">Products</a></li>
-            <li><a href="./categories.html">Categories</a></li>
-            <li class="active"><a href="./support.html">Support</a></li>
-        </ul>
+        <div class="logo"><a href="./index.html">GameStore</a></div>
+        <div class="responsive">
+            <ul class="items" id="items">
+                <div class="logo-res"><a href="./index.html">GameStore</a><i class="fa-solid fa-xmark" id="xmark"
+                        onclick="hideMenu()"></i></div>
+                <li><a href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="./products.html"><i class="fa-solid fa-paperclip"></i> Products</a></li>
+                <li><a href="./categories.html"><i class="fa-solid fa-list"></i> Categories</a></li>
+                <li class="active"><a href="./support.html"><i class="fa-solid fa-envelope"></i> Support</a></li>
+
+                <div class="items-res">
+                    <a href="#">
+                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    </a>
+                    <a href="./shoppingcart.html">
+                        <li><i class="fa-solid fa-cart-shopping"></i></li>
+                    </a>
+                </div>
+            </ul>
+        </div>
         <div class="items-left">
             <a href="#">
                 <li><i class="fa-solid fa-magnifying-glass"></i></li>
@@ -29,78 +45,85 @@
             <a href="./shoppingcart.html">
                 <li><i class="fa-solid fa-cart-shopping"></i></li>
             </a>
+            <label for="check" class="checkbtn" id="checkbtn" onclick="showMenu()">
+                <li><i class="fa-solid fa-bars checkbtn"></i></li>
+            </label>
         </div>
     </nav>
 
     <!-- Div container to the contact appart -->
-    <div class="container-contact">
 
-        <div class="container-img"><img src="img/Contact-Us.png" alt=""></div>
-        <!-- form  -->
-        <div class="form">
-            <h1>Contact Us</h1>
-            <form action="/mail.php" method="post">
-                <div class="form-container">
-                    <ul>
-                        <div class="uno">
-                            <li>
-                                <label for="name"></label>
-                                <input type="text" id="name" name="nombre" placeholder="first Name">
-                            </li>
-                        </div>
+    <div class="main-container">
 
-                        <div class="dos">
-                            <li>
-                                <label for="name"></label>
-                                <input type="text" id="lastName" name="nombre2" placeholder="Last Name">
-                            </li>
-                        </div>
-                        <div class="tres">
-                            <li>
-                                <label for="mail"></label>
-                                <input type="mail" id="email" name="correo" placeholder="Enter Email">
-                            </li>
-                        </div>
-                        <div class="cuatro">
-                            <li>
-                                <label for="msg"></label>
-                                <textarea id="msg" name="mensaje" placeholder="Your Message"></textarea>
-                            </li>
-                        </div>
-                    </ul>
-                    <div class="button-submit"><input type="submit" name="send"></div>
+        <div class="part-of-icon">
+            <img src="./img/Contact-Us.png" alt="" class="icon-contact">
+        </div>
+
+        <div class="half">
+
+            <h1 class="contact-us">Contact Us</h1>
+            <form id="form" action="#">
+                <div class="row-1">
+                    <input type="text" id="name" class="name red" name="nombre" placeholder="First Name">
+                    <input type="text" id="lastName" name="nombre2" placeholder="Last Name">
+                </div>
+
+                <div class="row-2">
+                    <input type="mail" id="Email" class="email red" name="correo" placeholder="Enter Email">
+                    
+                </div>
+
+                <div class="row-3">
+                    <input type="text" id="your-message" name="mensaje" placeholder="Your Message">
+                </div>
+
+                <div class="submit">
+                    <button><input type="submit" name="send" class="submit-btn" id="submit-btn"></button>
                 </div>
             </form>
         </div>
-            <div class="contact-info">
-                <div class="icons-contact">
-                    <div class="icon">
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                </div>
-                        <h2>"Lorem ipsum dolor sit amet <br>
-                        consectetur adipiscing elit <br>
-                        sed do eiusmod tempor incididunt <br>
-                        ut labore et dolore magna aliqua. <br>
-                        Ut enim ad m</h2>
-                        <h1>Shop's Name</h1>
-                </div>
+
+        <div class="right">
+            <div class="icons-social">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
             </div>
-            
-            <!--  -->
+
+            <div class="description">
+                <h2>If you have any questions regarding the service or any of our products, do not hesitate to contact
+                    us through social networks or by sending an email</h2>
+            </div>
+            <div class="game-store-title">
+                <h1 class="game-store">Game Store</h1>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- form  -->
+
+
+
+
+
+
+
+
 
     </div>
     <!-- Divs to create the background squares -->
-<div class="squares"></div>
-<div class="squares2"></div>
-<div class="squares3"></div>
-<div class="squares4"></div>
-<div class="squares5"></div>
-
-<?php
+    <div class="squares"></div>
+    <div class="squares2"></div>
+    <div class="squares4"></div>
+    <div class="squares5"></div>
+    <script src="scripts/form.js"></script>
+    <?php
 include("mail.php")
 ?>
+   
 </body>
 
 </html>

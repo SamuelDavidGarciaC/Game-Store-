@@ -16,21 +16,28 @@
 <body>
 
     <nav class="navbar">
-        <div class="logo"><a href="./index.html">Shop's Name</a></div>
-        <ul class="items">
-            <li class="active"><a href="./index.html">Home</a></li>
-            <li><a href="./products.html">Products</a></li>
-            <li><a href="./categories.html">Categories</a></li>
-            <li><a href="./support.html">Support</a></li>
-        </ul>
-        <div class="items-left">
-            <a href="#">
-                <li><i class="fa-solid fa-magnifying-glass"></i></li>
-            </a>
-            <a href="./shoppingcart.html">
-                <li><i class="fa-solid fa-cart-shopping"></i></li>
-            </a>
+        <div class="logo"><a href="./index.html">GameStore</a></div>
+        <div class="responsive">
+            <ul class="items" id="items">
+                <div class="logo-res"><a href="./index.html">GameStore</a><i class="fa-solid fa-xmark" id="xmark" onclick="hideMenu()"></i></div>
+                <li><a href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="./products.html"><i class="fa-solid fa-paperclip"></i> Products</a></li>
+                <li><a href="./categories.html"><i class="fa-solid fa-list"></i> Categories</a></li>
+                <li class=""><a href="./support.html"><i class="fa-solid fa-envelope"></i> Support</a></li>
+
+                <div class="items-res">
+                    <a href="#"><li><i class="fa-solid fa-magnifying-glass"></i></li></a>
+                    <a href="./shoppingcart.html"><li><i class="fa-solid fa-cart-shopping"></i></li></a>
+                </div>
+            </ul>
         </div>
+            <div class="items-left">
+                <a href="#"><li><i class="fa-solid fa-magnifying-glass"></i></li></a>
+                <a href="./shoppingcart.html"><li><i class="fa-solid fa-cart-shopping"></i></li></a>
+                <label for="check" class="checkbtn" id="checkbtn" onclick="showMenu()">
+                    <li><i class="fa-solid fa-bars checkbtn" ></i></li>
+                </label>
+            </div>
     </nav>
 
     
@@ -200,8 +207,8 @@
         </div>
 
         <div class="discover-img">
-            <img class="front-page-img" src="img/adventure/life-is-strange.jpg">
-            <h3 class="title-games-discover">Life Is Strange Remastered
+            <img class="front-page-img" src="img/adventure/ark-survival-evolved.jpg">
+            <h3 class="title-games-discover">Ark Survival Evolved
             </h3>
             <h4 class="price-games-dicover">$13.50</h4>
             <div class="price-with-discount">
@@ -211,5 +218,5 @@
         </div>
 
     </div>
-
+    <script src="scripts/index.js"></script>
 </body>

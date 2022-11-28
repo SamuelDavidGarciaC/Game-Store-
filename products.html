@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,149 +12,111 @@
     <!-- link fontawesome -->
     <script src="https://kit.fontawesome.com/53bf4710fa.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- Create navbar with the items -->
     <nav class="navbar">
-        <div class="logo"><a href="./index.html">Shop's Name</a></div>
-            <ul class="items">
-                <li><a href="./index.html">Home</a></li>
-                <li class="active"><a href="./products.html">Products</a></li>
-                <li><a href="./categories.html">Categories</a></li>
-                <li><a href="./support.html">Support</a></li>
+        <div class="logo"><a href="./index.html">GameStore</a></div>
+        <div class="responsive">
+            <ul class="items" id="items">
+                <div class="logo-res"><a href="./index.html">GameStore</a><i class="fa-solid fa-xmark" id="xmark"
+                        onclick="hideMenu()"></i></div>
+                <li><a href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li class="active"><a href="./products.html"><i class="fa-solid fa-paperclip"></i> Products</a></li>
+                <li><a href="./categories.html"><i class="fa-solid fa-list"></i> Categories</a></li>
+                <li><a href="./support.html"><i class="fa-solid fa-envelope"></i> Support</a></li>
+
+                <div class="items-res">
+                    <a href="#">
+                        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                    </a>
+                    <a href="./shoppingcart.html">
+                        <li><i class="fa-solid fa-cart-shopping"></i></li>
+                    </a>
+                </div>
             </ul>
+        </div>
         <div class="items-left">
-            <a href="#"><li><i class="fa-solid fa-magnifying-glass"></i></li></a>
-            <a href="./shoppingcart.html"><li><i class="fa-solid fa-cart-shopping"></i></li></a>
+            <a href="#">
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            </a>
+            <a href="./shoppingcart.html">
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+            </a>
+            <label for="check" class="checkbtn" id="checkbtn" onclick="showMenu()">
+                <li><i class="fa-solid fa-bars checkbtn"></i></li>
+            </label>
         </div>
     </nav>
-        <section class="news">
-            <div class="square">
-                <div class="principal-square">
-                    <h1 class="title">News</h1>
-                    <div class="cards">
-                        <div class="card-1">
-                            <div class="card-img-1"></div>
-                            <button class="buy"><a href="./game-description.html">Buy</a></button>
-                        </div>
-                        <div class="card-2">
-                            <div class="card-img-2"></div>
-                            <button class="buy"><a href="#">Buy</a></button>
-                        </div>
-                        <div class="card-3">
-                            <div class="card-img-3"></div>
-                            <button class="buy"><a href="#">Buy</a></button>
-                        </div>
-                    </div>
-                </div>
+
+    <!-- NEWS GAMES -->
+    <div class="container-new-games">
+        <div class="img-container-new-games">
+            <div class="first-game">
+                <img src="./img/action/far-cry-6.webp" alt="">
+                <button class="buy"><a href="./game-description.html">Buy</a></button>
             </div>
-        </section>
 
-        <div class="platforms">
-            <div class="platform-button">
-
-                <!-- PC CATEGORY CARD -->
-                <div class="pc-category">
-                    <button><a href="#">Pc</a></button>
-                    <!-- PC CARDS  -->
-                    <div class="lines">
-                        <div class="line-1"></div>
-                        <div class="line-2"></div>
-                    </div>
-                    <div class="cards">
-                        <div class="card-4">
-                            <div class="card-img-4"></div>
-                        </div>
-                        <div class="card-5">
-                            <div class="card-img-5"></div>
-                        </div>
-                        <div class="card-6">
-                            <div class="card-img-6"></div>
-                        </div>
-
-                        <div class="card-7">
-                            <div class="card-img-7"></div>
-                        </div>
-                        <div class="card-8">
-                            <div class="card-img-8"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--  xbox CATEGORY CARD -->
-                <div class="xbox-category">
-                    <button><a href="#">Xbox One - Series</a></button>
-                    <!-- XBOX CARDS  -->
-                    <div class="lines-2">
-                        <div class="line-3"></div>
-                        <div class="line-4"></div>
-                    </div>
-                    <div class="cards">
-                        <div class="card-9">
-                            <div class="card-img-9"></div>
-                        </div>
-                        <div class="card-10">
-                            <div class="card-img-10"></div>
-                        </div>
-                        <div class="card-11">
-                            <div class="card-img-11"></div>
-                        </div>
-                    
-                        <div class="card-12">
-                            <div class="card-img-12"></div>
-                        </div>
-                        <div class="card-13">
-                            <div class="card-img-13"></div>
-                        </div>
-                    </div>
-                    </div>
-
-                <!-- PLAY CATEGORY CARD -->
-                <div class="play-category">
-                    <button><a href="#">Play Station 4 - 5</a></button>
-                    <!-- PLAY CARDS  -->
-                    <div class="lines-3">
-                        <div class="line-5"></div>
-                        <div class="line-6"></div>
-                    </div>
-                    <div class="cards">
-                        <div class="card-14">
-                            <div class="card-img-14"></div>
-                        </div>
-                        <div class="card-15">
-                            <div class="card-img-15"></div>
-                        </div>
-                        <div class="card-16">
-                            <div class="card-img-16"></div>
-                        </div>
-                    
-                        <div class="card-17">
-                            <div class="card-img-17"></div>
-                        </div>
-                        <div class="card-18">
-                            <div class="card-img-18"></div>
-                        </div>
-                    </div>
-                    </div>
-                
+            <div class="second-game">
+                <h1>NEWS</h1>
+                <img src="./img/adventure/stray.webp" alt="">
+                <button class="buy"><a href="./stray-description.html">Buy</button>
             </div>
-            <div>
-                <button class="view-more"><a href="categories.html">VIEW MORE</a></button>
+
+            <div class="three-game">
+                <img src="./img/action/battlefield-2042.webp" alt="">
+                <button class="buy"><a href="./battlefield-2042-description-general.html">Buy</button>
             </div>
         </div>
+    </div>
 
-        <footer>
-            <div class="footer-container">
+    <!-- PLATFORM -->
+    <div class="main-container-platform">
 
-            </div>
-        </footer>
-
+        <div class="container-platform">
+            <button class="pc-button">Pc</button>
+        </div>
+        <!-- <div class="lines">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+        </div> -->
+        <div class="category-pc">
+            <img class="img-of-game" src="./img/plataforms/pc/the-witcher-3.jpg" alt="">
+            <img class="img-of-game" src="./img/plataforms/pc/no-mans-sky.jpeg" alt="">
+            <img class="img-of-game" src="./img/plataforms/pc/escape-from-tarkov.webp" alt="">
+            <img class="img-of-game" src="./img/plataforms/pc/half-life-alyx.jpg" alt="">
+            <img class="img-of-game" src="./img/plataforms/pc/outlast2.webp" alt="">
+        </div>
         
 
-<!-- Divs to create the background squares -->
-<div class="squares"></div>
-<div class="squares2"></div>
-<div class="squares4"></div>
-<div class="squares5"></div>
 
+        <div class="container-platform">
+            <button class="xbox-button">Xbox</button>
+        </div>
+
+        <div class="category-xbox">
+            <img class="img-of-game" src="./img/plataforms/xbox/burnout-paradise.jpeg" alt="">
+            <img class="img-of-game" src="./img/plataforms/xbox/forza-horizon-4.jpeg" alt="">
+            <img class="img-of-game" src="./img/plataforms/xbox/halo-infinite.png" alt="">
+            <img class="img-of-game" src="./img/plataforms/xbox/gears-of-war-4.jpg" alt="">
+            <img class="img-of-game" src="./img/plataforms/xbox/flight-simulator.jpg" alt="">
+        </div>
+
+
+        <div class="container-platform">
+            <button class="playstation-button">PlayStation</button>
+        </div>
+
+        <div class="category-xbox">
+            <img class="img-of-game" src="./img/plataforms/playStation/god-of-war.jpeg" alt="">
+            <img class="img-of-game" src="./img/plataforms/playStation/the-last-of-us.jpg" alt="">
+            <img class="img-of-game" src="./img/plataforms/playStation/detroit-become-human.jpeg" alt="">
+            <img class="img-of-game" src="./img/plataforms/playStation/days-gone.jpeg" alt="">
+            <img class="img-of-game" src="./img/plataforms/playStation/uncharted-4.jpg" alt="">
+        </div>
+
+        <div class="more-games">
+            <button class="view-more"><a href="./categories.html">VIEW MORE</a></button>
+        </div>
+    </div>
 </body>
-</html>
