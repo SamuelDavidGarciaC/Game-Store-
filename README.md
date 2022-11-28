@@ -1,5 +1,4 @@
-# Game-Store-
-Samuel David Garcia Carrillo, Jeferson Sebastian Mesa Moreno
+# Game-Store
 
 <h1 align="center"> GameStore </h1> 
 
