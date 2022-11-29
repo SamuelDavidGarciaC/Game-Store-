@@ -20,9 +20,7 @@ In this section of products we decided to place the new video games at the top, 
 It is the section in which we can find 15 video games each with their name, price and discount. These are divided into 3 main categories (ACTION, TERROR AND ADVENTURE)
 
 - Description Game: <br>
-in this tab we place the image of the game with a quick description, next to the rating of the users that is the MetaScore with other subgenres and buttons that redirect them to the general description and technical requirements so that the game can run correctly on the PC platform since on Xbox and PlayStation there is no need for this option because the developers already have optimized the games they launch by default.<br>
-
-We also add a trailer to the games along with 5 representative images of these, and on the right side it is indicated that the product has a warranty, is in stock, is digital and shows the final price with the discount, also the shopping cart
+in this tab we place the image of the game with a quick description, next to the rating of the users that is the MetaScore with other subgenres and buttons that redirect them to the general description and technical requirements so that the game can run correctly on the PC platform since on Xbox and PlayStation there is no need for this option because the developers already have optimized the games they launch by default. We also add a trailer to the games along with 5 representative images of these, and on the right side it is indicated that the product has a warranty, is in stock, is digital and shows the final price with the discount, also the shopping cart<br>
 
 - Support: <br>
 In the support section we can see a large contact form maintaining that intuitive and minimalist design in which we will have the possibility of sending an email to the administrators in case we have any problem with the page or with our purchase
